@@ -1,0 +1,252 @@
+JS IS INVENTED BY BRENDIAN EICH In 1995 at Netscape
+
+mocha---initially js name
+
+live script--
+
+java script.
+
+
+js will follows the ECMA script (ES5...ES13) standards
+
+features of js:
+--------------
+dynamically typed language or loosely coupled language
+object-oriented
+functional programming capabilities
+first-class functions
+prototype-based inheritance.
+
+uses of js:
+-----------
+clientside scripting language
+server-side programming language with technologies like nodejs.
+mobile and desktop app development
+game development
+
+
+js in frontend development:
+----------------------------
+used for creating interactive web pages
+to manipulate the html and css
+event handling and form-submission/form-validation
+api interactions
+
+
+
+to run the js at client side--->
+different browsers will have different js engines.
+
+chrome-->v8 engine
+firefox-> spider monkey
+edge--->chakra
+safari--->jscore/nitro
+internet explorer-->chakra
+
+mediators
+
+js uses interpreter as a mediator to transfer the code to by converting into machine level language to the processor.
+
+let x=20;// this cannot be understandable by the processor.
+
+compiler/interpreter.
+
+here js will use interpreter to run the code.
+
+
+line 1
+line 2
+line 3
+
+
+machinelevel language-->executable file-->read by the processer and deliver the output.
+line1-->cnvert-->read-->JIT COMPILER--->prepare
+line2-->convert-->read-->JIT COMPILER--->prepare
+
+
+
+
+
+recipie manual-->
+
+chef1
+
+will read entire manual and then create his own style recepie notes and then starts cooking
+
+chef2
+
+he will cook instantly after reading the every single line.
+
+
+js is language which handles both synchronous/asynchronous operations.
+
+
+
+line 1
+
+line 2
+
+line 3
+
+execution happening in sequential way-->synchronous
+
+
+line2
+
+line1
+
+line3--->asynchronous operations. 
+
+handling asynchronous operations is nothing but making them to behave as a synchronous oerations.
+
+
+1.how to include js in our html file
+2.variables
+3.data types(numbers,strings,arrays,objects,boolean,undefined,null,bigint...)/operators
+4.functions(named,arrow,callback,higherorder,pure,impure..)
+5.conditional statement(if,elseif,switch,nestedif,terinary.)
+6.looping statements
+7.array and its methods
+8.string and its methods
+9.object and its methods
+10.number and its methods
+11.math methods and date methods
+12.closures,call,apply,bind methods
+13.oops
+14.dom and manipulation
+15.events and event handling/form validation
+16.bom and manipulation,web storages(local and session)
+17.asynchronous concepts
+18.callback hell
+19.promises
+20.json server-api calls and crud operations
+21.async and await.
+
+
+
+
+
+node-->it will be act as a runtime environment..?
+
+with the help of this node we can able to run js in our vscode terminal itself..otherwise we need to run/exectu in the browser console.
+
+
+defer attribute use in external script
+
+the defer attribute is used whenever loading external scrpt in html doc
+it tell browser to download script in back ground while continuing to parse the html,but to only execute the script after the entire doc has been fully parsed.
+
+if we declare a variable without assigning any value to it contain
+undefined
+
+if we dont declare it shows // it is not defined ( when we try to acccess without declaring ) both are reference errors
+
+console.log(typeof s)
+
+datatypes are classified into 2 types 
+ 1.Primitive
+    // will store single value only
+    // immutable
+    // they can access by value itself
+ 2.Non Primitive
+    // it can hold multiple values into a single variable
+    // muatble
+    // they can be store by their reference/instance/address in the memory.
+    // access them with the referrence
+
+ 1.Primitive
+     1 number
+     2 string
+     3 boolean
+     4 null   // assigning empty value wantedly
+     5 undefined
+
+     6 Bigint and symbol
+
+ 2. Non Primitive
+    1 array --> we can store same/diff types of data in single array.
+            --> []
+            -->access with the index
+    2 object -->we can store the values in the key-value pairs
+             -->{}
+             -->access with help of keys
+
+Operators
+  operator --> A symbols used to perform an operations
+  operands --> 
+
+  Airthmatic  +,-,/,%,--,++,*,//\
+  Logical
+  assignmentComparision
+
+
+  console.log(` add of x and y is ${x+y}`);
+The addition assignment ( += ) operator
+conditional operator
+  ?:
+  check statement?"true block":"false block";
+
+  optional chaining ?.:
+  nullish coalescing operator ??
+  
+
+The statement console.log(null ?? 'default') in JavaScript uses the nullish coalescing operator (??). Here's a detailed explanation:
+The ?? operator returns the right-hand operand when the left-hand operand is null or undefined.
+If the left-hand operand is any other value (including 0, NaN, false, an empty string, etc.), it returns the left-hand operand.
+
+
+console.log(10 || 'default'); // Output: 10
+The console.log function prints the result of the evaluation. Since 10 is truthy, it is returned and printed.
+
+The bitwise XOR operator (^) compares each bit of its operands. If the corresponding bits are different, the result is 1; otherwise, the result is 0.
+ 1100  (12 in binary)
+^ 0101  (5 in binary)
+-------
+  1001  (result in binary)
+
+  The bitwise OR operator performs a bitwise OR operation on two operands. It compares each bit of the first operand to the corresponding bit of the second operand. If either bit is 1, the corresponding result bit is set to 1. If both bits are 0, the corresponding result bit is set to 0.
+    1100   (binary for 12)
+| 0101   (binary for 5)
+------
+  1101   (result in binary)
+
+  The bitwise AND operator compares each bit of two numbers and returns a new number whose bits are set to 1 if both corresponding bits of the operands are 1. If either bit is 0, the result bit is 0.
+   1100  (12 in binary)
+& 0101  (5 in binary)
+------
+  0100  (Result in binary)
+
+
+Left Shift (<<): Shifts bits to the left, filling in with zeroes.
+Right Shift (>>): Shifts bits to the right, preserving the sign bit (sign-propagating).
+Unsigned Right Shift (>>>): Shifts bits to the right, filling in with zeroes (zero-fill right shift).
+
+
+assignment operators
+ =,+=,-=,/=,%=,*=,**=
+ Airthmatic
+ +,-,++,--,*,/,*,%
+ comparision 
+ ==, ===, !=, !==, 
+ < ,>, <=, >= ,
+ String operators
+ =, +=, 
+ Logical operand
+ ||, &&, !
+
+ conditional 
+ ?: 
+ ?. optional chaining
+ bitwise
+ ^, &, |, ~,<<,>>, >>> 
+
+
+1.0ne time view
+2.if msg = one time // view we can't share
+3. if not can shrare
+delete 24hr
+
+largest among 3
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let x=+prompt("Enter 1st angle");
+        let y=+prompt("Enter 1st angle");
+        let z=+prompt("Enter 1st angle");
+        if(((x+y+z)==180) && (x>0 && y>0 &&z>0)){
+           
+           if((x==90) || (y == 90) || (z==90)){
+               document.write("<br>It is a Right Angle Triangle<br>")
+               console.log("It is a Right Angle Triangle")
+           }
+       }
+       else{
+           document.write("<br>It is  not  Triangle<br>")
+           console.log("It is not Right Angle Triangle")
+       }
+        
+    </script>
+</body>
+</html>
